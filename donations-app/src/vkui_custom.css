@@ -1,0 +1,8 @@
+.Card__in {
+    width: 100%;
+}
+
+.FormLayout__container {
+    min-height: calc(100vh - 122px);
+}
+
