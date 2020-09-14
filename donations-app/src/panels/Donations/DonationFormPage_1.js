@@ -129,7 +129,7 @@ const DonationFormPage1 = ({id, go, type, user, handleChange, activeDonation, cl
                 }
 
                 <FormLayoutGroup top="Название сбора">
-                    <Input value={title} name="title" type="text" placeholder="Название сбора" onChange={e => handleChange(e)}/>
+                    <Input value={title} maxlength="60" name="title" type="text" placeholder="Название сбора" onChange={e => handleChange(e)}/>
                 </FormLayoutGroup>
 
                 <FormLayoutGroup top={getInputTitle(type, 'amount')} >

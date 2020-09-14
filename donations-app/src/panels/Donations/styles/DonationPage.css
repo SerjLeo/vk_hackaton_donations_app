@@ -6,6 +6,14 @@
 .content-center {
     max-width: 620px;
 }
+
+.donation-card-progress {
+    justify-content: space-between;
+}
+
+.donation-progress-bar {
+    width: calc(100% - 91px);
+}
 .donation-page-img__container {
     min-height: 140px;
     max-height: 280px;
@@ -32,7 +40,7 @@
 }
 
 .donation-progress-bar {
-    width: 237px;
+    width: calc(100% - 91px)
 }
 
 .progress-bar__body {
@@ -41,6 +49,39 @@
     height: 4px;
     background: rgba(63, 138, 224, .3);
     border-radius: 2px;
+}
+
+.donation-progress-bar__big {
+    width: 100%;
+    position: relative;
+}
+
+.progress-collected {
+    position: absolute;
+    top: 23px;
+    right: 10px;
+    color: rgb(75, 179, 75);
+}
+
+.progress-done {
+    position: absolute;
+    top: 23px;
+    left: 10px;
+    color: #fff;
+}
+
+.progress-bar__body__big {
+    margin-top: 8px;
+    width: 100%;
+    height: 24px;
+    background: rgba(184, 193, 204, .3);
+    border-radius: 6px;
+}
+
+.progress-bar__body__big > .Progress__in {
+    background: rgb(75, 179, 75);
+    height: 24px;
+    border-radius: 6px;
 }
 
 .donation-card-header {

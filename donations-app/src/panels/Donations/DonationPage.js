@@ -61,9 +61,19 @@ const DonationPage = ({id, go, donation}) => {
                             }
                         </div>
                         <Separator/>
-                        kek
+                        <div className="donation-card-header">
+                            <div className="donation-progress-bar__big">
+                                {type === 'regular'
+                                    ?<Text weigth="semibold">Нужно собрать в этом месяце</Text>
+                                    :<Caption level={1} weight="regular">Уже собрано</Caption>
+                                }
+                                <Progress value={Math.floor(collected/amount*100)} className="progress-bar__body__big"/>
+                                <div className="progress-collected">{amount}</div>
+                                <div className="progress-done">{collected}</div>
+                            </div>
+                        </div>
                         <Separator/>
-                        <div className="page-description">
+                        <div className="page-description donation-card-header">
                             {description}
                         </div>
                         <Separator/>
